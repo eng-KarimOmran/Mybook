@@ -71,7 +71,7 @@ export default function Books() {
       <div className='container flex items-center justify-center flex-wrap'>
         {
           books.map((book)=>(
-          <div key={book.id} className='p-8 w-full max-w-[300px] sm:w-6/12 lg:w-1/4'>
+          <div key={book.id} className='p-8 w-full max-w-[350px] sm:w-6/12 lg:w-1/4'>
             <div className='w-full h-[400px] rounded-lg overflow-hidden flex flex-col justify-between'>
               <img className='w-full mx-auto max-h-[270px] object-fill object-center block' src={`https://www.my-book.wuaze.com/MyBook/ImgBooks/${book.image_url}`} alt={book.image_url} />
               <div className='text-xl font-bold'>{book.title.split(' ').slice(0, 3).join(' ')}</div>
